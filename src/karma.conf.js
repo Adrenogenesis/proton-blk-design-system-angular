@@ -20,10 +20,10 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    browsers: ['Chrome'],
+    browsers: ['ChromeNoSandbox'],
     customLaunchers: {
-        ChromeHeadlessCI: {
-            base: 'ChromeHeadless',
+      ChromeNoSandbox: {
+            base: 'Chrome',
             flags: ['--no-sandbox']
         }
     },
