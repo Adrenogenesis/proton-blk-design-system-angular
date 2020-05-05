@@ -1,22 +1,17 @@
-
-version: 2.1
-orbs:
-  node: circleci/node@1.1.6
+version: 2
 jobs:
-  build-and-test:
+  build:
+    working_directory: ~/blk-design-system-angular-master
     docker:
-      - image: 'circleci/node:latest'
-    environment:
-          - CHROME_BIN=/usr/bin/google-chrome
-    executor:
-      name: node/default
+      - image: circleci/node:10-browsers
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+      - restore_cache:
+          key: blk-design-system-angular-master-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          key: blk-design-system-angular-master-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          paths:
+            - "node_modules"
+      - run: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - run: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
