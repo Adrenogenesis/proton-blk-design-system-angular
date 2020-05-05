@@ -14,6 +14,7 @@ import { DOCUMENT } from "@angular/common";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
+  title = 'blk-design-system-angular';
   constructor(
     private renderer: Renderer2,
     public location: Location,
