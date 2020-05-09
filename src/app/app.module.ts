@@ -7,7 +7,6 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import {DemoMaterialModule} from './material-module';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
-import {spinner} from './spinner';
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
@@ -31,7 +30,6 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
 
 @NgModule({
   declarations: [
-    spinner,
     AppComponent,
     // IndexComponent,
     // ProfilepageComponent,
@@ -60,9 +58,7 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
     // CarouselModule.forRoot(),
     // ModalModule.forRoot()
   ],
-  entryComponents: [spinner],
   bootstrap: [
-    spinner,
     AppComponent,
   ],
   providers: [
