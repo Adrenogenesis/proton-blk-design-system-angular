@@ -13,7 +13,7 @@ import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 export class spinner {
     color: ThemePalette = 'primary';
     mode: ProgressSpinnerMode = 'determinate';
-    value = 50;
+    value = 1;
 }
 
 
