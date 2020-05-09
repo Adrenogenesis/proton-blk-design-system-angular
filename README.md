@@ -1,5 +1,8 @@
 https://www.protonwebmaster.com
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3f1367c-4873-40e1-b348-532a1762d3fb/deploy-status)](https://app.netlify.com/sites/peaceful-shockley-3d4d24/deploys)
+
 [Blk• Design  System Angular](https://demos.creative-tim.com/blk-design-system-angular) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fblk-design-system-angular&text=BLK%20Design%20System%20Angular%20-%20Free%20Angular%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%blk-design-system-angular%2F%3F_ga%3D2.234372891.44370326.1533641128-1803433978.1528781151&via=creativetim&hashtags=angular%2Cbootstrap)
 
 
