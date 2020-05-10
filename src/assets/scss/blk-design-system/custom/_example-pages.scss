@@ -8,11 +8,31 @@
         &.brand {
           .h1-seo,
           h3 {
-            color: $white;
+            color: $danger-states;
+            text-shadow: 2px 2px #FFFFFF;
             font-weight: 600;
             text-transform: capitalize;
             span {
               font-weight: $font-weight-bold;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        > .content-center {
+          &.brand {
+            .h1-seo,
+            h3 {
+              color: $secondary;
+              font-size: 8vw;
+              font-weight: 600;
+              text-transform: capitalize;
+              span {
+                font-weight: $font-weight-bold;
+              }
             }
           }
         }
